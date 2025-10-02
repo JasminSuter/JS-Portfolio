@@ -30,8 +30,12 @@
         <img id="myImgc" src="./static/uploads/Ball_Animation.gif" class="slideshow-image">
     </div>
 
-        <div class="mySlides fade">
+     <div class="mySlides fade">
         <img id="myImgd" src="./static/uploads/Spiral_Animation.gif" class="slideshow-image">
+    </div>
+
+    <div class="mySlides fade">
+        <img id="myImge" src="./static/uploads/Witch_idle.gif" class="slideshow-image">
     </div>
 
         <!-- The Modal -->
@@ -60,6 +64,7 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
     <span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
     </div> 
 
 
@@ -406,6 +411,30 @@ var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImgd");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} 
+  
+  </script>
+
+  <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImge");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
