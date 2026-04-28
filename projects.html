@@ -37,7 +37,20 @@
   <h1>Third year IDAD project</h1>
 
             <h2>Coven Country: The ttrpg</h2>
-            <p><a href="./static/project/CovenCountryFinal.pdf" download="Coven Country PDF">Download as pdf</a></p>
+           
+                
+  <div class="box1">
+        <div class="row1">
+            <div class="column1">
+                 <p><a href="./static/project/CovenCountryFinal.pdf" download="Coven Country PDF">Download as pdf</a> </p>
+            </div>
+            <div class="column1">
+                <p><a href="./static/project/CharacterSheet.pdf" download="Coven Country PDF">Download character sheet</a></p>
+            </div>
+        </div> 
+    </div>
+
+
 
 
             <img src="./static/project/CoverWeb.png" alt="Cover" class="art scene">
@@ -220,6 +233,22 @@
         font-size: 20px;
         margin-left: 5%;
     }
+    
+    a {
+        text-decoration:none;
+    }
+
+    a:link {
+        color: #9b4f20;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #53321d;
+        background-color: transparent;
+        text-decoration: none;
+    }
 
     .container1 {
         display: grid;
@@ -332,6 +361,18 @@
         width: 7rem;
         height: 7rem;
   }
+
+  .column1 {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
        
 </style>
